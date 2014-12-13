@@ -1,6 +1,6 @@
 Name:     texlive-fake
 Version:  1
-Release:  6%{?dist}
+Release:  7%{?dist}
 Summary:  Fakes the installation of the texlive packages
 Epoch:    99
 License:  BSD
@@ -15,6 +15,10 @@ Provides: tex(dvips)
 Provides: tex(latex)
 Provides: tex(tex)
 Provides: tex(url.sty)
+Provides: texlive-framed
+Provides: texlive-threeparttable
+Provides: texlive-titlesec
+Provides: texlive-wrapfig
 Provides: xdvi
 
 
@@ -33,6 +37,9 @@ Useful if you have installed texlive from ctan.
 %files
 
 %changelog
+* Sat Dec 13 2014 Lars Kiesow <lkiesow@uos.de> - 1-7
+- Added further texlive packages
+
 * Fri Oct 17 2014 Lars Kiesow <lkiesow@uos.de> - 1-6
 - Added further provides
 
